@@ -1,0 +1,1140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>798</width>
+    <height>500</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true">#centralwidget{background-color: rgb(0, 0, 0);}
+
+</string>
+   </property>
+   <widget class="QPushButton" name="power">
+    <property name="geometry">
+     <rect>
+      <x>290</x>
+      <y>400</y>
+      <width>221</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/source/on-2.png);
+
+</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="tar_temp">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>180</y>
+      <width>221</width>
+      <height>161</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线 Light</family>
+      <pointsize>60</pointsize>
+      <weight>3</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(85, 255, 255);
+font: 25 60pt &quot;等线 Light&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>24</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="MAX">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>380</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 9pt &quot;等线&quot;;
+color: rgb(23, 255, 224);</string>
+    </property>
+    <property name="text">
+     <string>MAX</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="bar">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>370</y>
+      <width>211</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: qlineargradient(spread:pad, x1:1, y1:0, x2:0, y2:0, stop:0 rgba(0, 255, 221, 255), stop:1 rgba(255, 255, 255, 255));</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="MIN">
+    <property name="geometry">
+     <rect>
+      <x>70</x>
+      <y>380</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 9pt &quot;等线&quot;;
+color: rgb(23, 255, 224);</string>
+    </property>
+    <property name="text">
+     <string>MIN</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="min_temp">
+    <property name="geometry">
+     <rect>
+      <x>80</x>
+      <y>370</y>
+      <width>31</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 9pt &quot;等线&quot;;
+color: rgb(23, 255, 224);</string>
+    </property>
+    <property name="text">
+     <string>17°</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="max_temp">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>360</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 9pt &quot;等线&quot;;
+color: rgb(23, 255, 224);</string>
+    </property>
+    <property name="text">
+     <string>31°</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="time">
+    <property name="geometry">
+     <rect>
+      <x>490</x>
+      <y>110</y>
+      <width>141</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线 Light</family>
+      <pointsize>28</pointsize>
+      <weight>1</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(209, 209, 209);
+font: 10 28pt &quot;等线 Light&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>1:33</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="pm_am">
+    <property name="geometry">
+     <rect>
+      <x>630</x>
+      <y>100</y>
+      <width>51</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线 Light</family>
+      <pointsize>15</pointsize>
+      <weight>1</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(209, 209, 209);
+font: 10 15pt &quot;等线 Light&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>PM</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="sub">
+    <property name="geometry">
+     <rect>
+      <x>330</x>
+      <y>240</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/source/sub.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="add">
+    <property name="geometry">
+     <rect>
+      <x>50</x>
+      <y>240</y>
+      <width>61</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/source/add.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="setting_text">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>180</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线 Light</family>
+      <pointsize>8</pointsize>
+      <weight>1</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(209, 209, 209);
+font: 15 8pt &quot;等线 Light&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>SETTING TEMPERATURE</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="indoor_text">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>80</y>
+      <width>141</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线 Light</family>
+      <pointsize>8</pointsize>
+      <weight>1</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(209, 209, 209);
+font: 15 8pt &quot;等线 Light&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>INDOOR TEMPERATURE</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="wifi">
+    <property name="geometry">
+     <rect>
+      <x>150</x>
+      <y>320</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/source/wifi_on.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="mode">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>320</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/source/snow.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="indoor_temp">
+    <property name="geometry">
+     <rect>
+      <x>100</x>
+      <y>110</y>
+      <width>121</width>
+      <height>61</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线 Light</family>
+      <pointsize>28</pointsize>
+      <weight>1</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(209, 209, 209);
+font: 10 28pt &quot;等线 Light&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>30</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="wind_text">
+    <property name="geometry">
+     <rect>
+      <x>560</x>
+      <y>180</y>
+      <width>81</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线 Light</family>
+      <pointsize>8</pointsize>
+      <weight>1</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(209, 209, 209);
+font: 15 8pt &quot;等线 Light&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>WIND SPEED</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="current_money">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>320</y>
+      <width>101</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线 Light</family>
+      <pointsize>22</pointsize>
+      <weight>3</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(85, 255, 255);
+font: 25 22pt &quot;等线 Light&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>12.34</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="current_label">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>300</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线 Light</family>
+      <pointsize>8</pointsize>
+      <weight>1</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(209, 209, 209);
+font: 15 8pt &quot;等线 Light&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>CURRENT EXPENSE</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="no_wind">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>230</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap resource="resource.qrc">:/source/power_saving.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="money_text_off">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>390</y>
+      <width>231</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 9pt &quot;等线&quot;;
+color: rgb(23, 255, 224);</string>
+    </property>
+    <property name="text">
+     <string>当前处于省电模式，暂停计费</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="line2">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>270</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 9pt &quot;等线&quot;;
+color: rgb(23, 255, 224);</string>
+    </property>
+    <property name="text">
+     <string>——————————————————————</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="line1">
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>200</y>
+      <width>281</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 9pt &quot;等线&quot;;
+color: rgb(23, 255, 224);</string>
+    </property>
+    <property name="text">
+     <string>——————————————————————</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="title">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>801</width>
+      <height>502</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>黑体</family>
+      <pointsize>12</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;黑体&quot;;
+color: rgb(208, 208, 208);
+background-image: url(:/source/black.jpg);</string>
+    </property>
+    <property name="text">
+     <string>房间空调控制面板-305</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="wind1">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>230</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/source/wind1_off.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="wind2">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>230</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/source/wind2_off.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="wind3">
+    <property name="geometry">
+     <rect>
+      <x>690</x>
+      <y>230</y>
+      <width>41</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">border-image: url(:/source/wind3_on.png);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="degree1">
+    <property name="geometry">
+     <rect>
+      <x>229</x>
+      <y>190</y>
+      <width>101</width>
+      <height>141</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线 Light</family>
+      <pointsize>60</pointsize>
+      <weight>3</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(85, 255, 255);
+font: 25 60pt &quot;等线 Light&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>℃</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="degree2">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>120</y>
+      <width>51</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线 Light</family>
+      <pointsize>28</pointsize>
+      <weight>1</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(209, 209, 209);
+font: 10 28pt &quot;等线 Light&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>℃</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="rmb1">
+    <property name="geometry">
+     <rect>
+      <x>480</x>
+      <y>320</y>
+      <width>31</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线 Light</family>
+      <pointsize>22</pointsize>
+      <weight>3</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(85, 255, 255);
+font: 25 22pt &quot;等线 Light&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>¥</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="money_text_on">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>390</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 9pt &quot;等线&quot;;
+color: rgb(23, 255, 224);</string>
+    </property>
+    <property name="text">
+     <string>正在计费中...</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="disconnected">
+    <property name="geometry">
+     <rect>
+      <x>500</x>
+      <y>390</y>
+      <width>201</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 9pt &quot;等线&quot;;
+color: rgb(23, 255, 224);</string>
+    </property>
+    <property name="text">
+     <string>与服务器断开连接</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="reconnect">
+    <property name="geometry">
+     <rect>
+      <x>60</x>
+      <y>450</y>
+      <width>251</width>
+      <height>28</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(23, 255, 224)</string>
+    </property>
+    <property name="text">
+     <string>重连云服务器</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="yuan_min">
+    <property name="geometry">
+     <rect>
+      <x>530</x>
+      <y>370</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 9pt &quot;等线&quot;;
+color: rgb(23, 255, 224);</string>
+    </property>
+    <property name="text">
+     <string>(             元/分钟    )</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="uni_fee">
+    <property name="geometry">
+     <rect>
+      <x>550</x>
+      <y>370</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">
+font: 75 9pt &quot;等线&quot;;
+color: rgb(23, 255, 224);</string>
+    </property>
+    <property name="text">
+     <string>0.80 </string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="total_money">
+    <property name="geometry">
+     <rect>
+      <x>640</x>
+      <y>340</y>
+      <width>101</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线 Light</family>
+      <pointsize>22</pointsize>
+      <weight>3</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(85, 255, 255);
+font: 25 22pt &quot;等线 Light&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>12.34</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
+    </property>
+   </widget>
+   <widget class="QLabel" name="rmb_2">
+    <property name="geometry">
+     <rect>
+      <x>620</x>
+      <y>320</y>
+      <width>31</width>
+      <height>71</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线 Light</family>
+      <pointsize>22</pointsize>
+      <weight>3</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(85, 255, 255);
+font: 25 22pt &quot;等线 Light&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>¥</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="total_label">
+    <property name="geometry">
+     <rect>
+      <x>610</x>
+      <y>300</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>等线 Light</family>
+      <pointsize>8</pointsize>
+      <weight>1</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color:rgb(209, 209, 209);
+font: 15 8pt &quot;等线 Light&quot;;
+</string>
+    </property>
+    <property name="text">
+     <string>TOTAL EXPENSE</string>
+    </property>
+    <property name="textFormat">
+     <enum>Qt::PlainText</enum>
+    </property>
+    <property name="scaledContents">
+     <bool>false</bool>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignCenter</set>
+    </property>
+   </widget>
+   <zorder>total_label</zorder>
+   <zorder>rmb_2</zorder>
+   <zorder>total_money</zorder>
+   <zorder>tar_temp</zorder>
+   <zorder>MAX</zorder>
+   <zorder>bar</zorder>
+   <zorder>MIN</zorder>
+   <zorder>min_temp</zorder>
+   <zorder>max_temp</zorder>
+   <zorder>time</zorder>
+   <zorder>pm_am</zorder>
+   <zorder>sub</zorder>
+   <zorder>add</zorder>
+   <zorder>setting_text</zorder>
+   <zorder>indoor_text</zorder>
+   <zorder>wifi</zorder>
+   <zorder>mode</zorder>
+   <zorder>indoor_temp</zorder>
+   <zorder>wind_text</zorder>
+   <zorder>current_money</zorder>
+   <zorder>current_label</zorder>
+   <zorder>no_wind</zorder>
+   <zorder>money_text_off</zorder>
+   <zorder>line2</zorder>
+   <zorder>line1</zorder>
+   <zorder>wind1</zorder>
+   <zorder>wind2</zorder>
+   <zorder>wind3</zorder>
+   <zorder>degree1</zorder>
+   <zorder>degree2</zorder>
+   <zorder>rmb1</zorder>
+   <zorder>money_text_on</zorder>
+   <zorder>disconnected</zorder>
+   <zorder>yuan_min</zorder>
+   <zorder>uni_fee</zorder>
+   <zorder>title</zorder>
+   <zorder>power</zorder>
+   <zorder>reconnect</zorder>
+  </widget>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>sub</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>sub_temp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>347</x>
+     <y>265</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>341</x>
+     <y>164</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>add</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>add_temp()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>89</x>
+     <y>253</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>123</x>
+     <y>158</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>wind1</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>switch_to_w1()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>574</x>
+     <y>256</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>534</x>
+     <y>308</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>wind2</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>switch_to_w2()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>646</x>
+     <y>255</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>657</x>
+     <y>308</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>wind3</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>switch_to_w3()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>716</x>
+     <y>255</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>714</x>
+     <y>175</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>power</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>switch_power()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>408</x>
+     <y>474</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>228</x>
+     <y>532</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>reconnect</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>reconnect_slot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>459</x>
+     <y>291</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>959</x>
+     <y>320</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>switch_to_w1()</slot>
+  <slot>switch_to_w2()</slot>
+  <slot>switch_to_w3()</slot>
+  <slot>add_temp()</slot>
+  <slot>sub_temp()</slot>
+  <slot>switch_power()</slot>
+  <slot>reconnect_slot()</slot>
+ </slots>
+</ui>

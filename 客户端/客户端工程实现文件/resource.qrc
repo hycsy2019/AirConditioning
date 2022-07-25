@@ -1,0 +1,29 @@
+<RCC>
+    <qresource prefix="/">
+        <file>source/black.jpg</file>
+        <file>source/off.png</file>
+        <file>source/on-1.png</file>
+        <file>source/on-2.png</file>
+        <file>source/add.png</file>
+        <file>source/sub.png</file>
+        <file>source/wifi_off.png</file>
+        <file>source/wifi_on.png</file>
+        <file>source/snow.png</file>
+        <file>source/sun.png</file>
+        <file>source/wind1_off.png</file>
+        <file>source/wind1_on.png</file>
+        <file>source/wind2_off.png</file>
+        <file>source/wind2_on.png</file>
+        <file>source/wind3_off.png</file>
+        <file>source/wind3_on.png</file>
+        <file>source/power_saving.png</file>
+        <file>source/black2.jpg</file>
+        <file>source/black3.jpg</file>
+        <file>source/black4.jpg</file>
+        <file>source/black5.png</file>
+        <file>source/black6.jpg</file>
+        <file>source/black7.jpg</file>
+        <file>source/no_saving.png</file>
+        <file>a.txt</file>
+    </qresource>
+</RCC>
