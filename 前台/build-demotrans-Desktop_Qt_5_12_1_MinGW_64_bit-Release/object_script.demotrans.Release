@@ -1,0 +1,14 @@
+release/checkinwindow.o
+release/checkoutwindow.o
+release/loginwindow.o
+release/main.o
+release/mainwindow.o
+release/startwindow.o
+release/statisticwindow.o
+release/qrc_myimage.o
+release/moc_checkinwindow.o
+release/moc_checkoutwindow.o
+release/moc_loginwindow.o
+release/moc_mainwindow.o
+release/moc_startwindow.o
+release/moc_statisticwindow.o

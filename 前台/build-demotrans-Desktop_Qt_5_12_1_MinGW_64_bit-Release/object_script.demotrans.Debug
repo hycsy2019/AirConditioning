@@ -1,0 +1,14 @@
+debug/checkinwindow.o
+debug/checkoutwindow.o
+debug/loginwindow.o
+debug/main.o
+debug/mainwindow.o
+debug/startwindow.o
+debug/statisticwindow.o
+debug/qrc_myimage.o
+debug/moc_checkinwindow.o
+debug/moc_checkoutwindow.o
+debug/moc_loginwindow.o
+debug/moc_mainwindow.o
+debug/moc_startwindow.o
+debug/moc_statisticwindow.o
